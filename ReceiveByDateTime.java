@@ -28,7 +28,7 @@ public class ReceiveByDateTime {
                 .setNamespaceName("jbhubevent") // to target National clouds - use .setEndpoint(URI)
                 .setEventHubName("tester")
                 .setSasKeyName("RootManageSharedAccessKey")
-                .setSasKey("Lz+ap5NJ7C5o52OsFHlhDEmGvir4bq04vgHAInvryGA=");
+                .setSasKey("Lz+ap5NJ7C5o52OsFHl*********hD*******r4bq04vgHAInvryGA=");
 
         final ExecutorService executorService = Executors.newSingleThreadExecutor();
         final EventHubClient ehClient = EventHubClient.createSync(connStr.toString(), executorService);
