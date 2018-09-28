@@ -6,7 +6,8 @@
 <p> to check if the reciever works use the docker logs [containerid]
   </p>
 <p> docker logs 216b11cb5efb --follow </p>
-<p> you should see : 
+<p>
+  you should see : 
   SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
