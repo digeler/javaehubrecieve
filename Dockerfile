@@ -37,5 +37,5 @@ COPY ReceiveByDateTime.java ReceiveByDateTime/src/main/java/com/microsoft/azure/
 
 COPY  pom.xml /usr/lib/jvm/java-8-oracle/ReceiveByDateTime
 RUN cd /usr/lib/jvm/java-8-oracle/ReceiveByDateTime && mvn package
-#RUN mvn package
+#RUN java -jar ReceiveByDateTime/target/receiveusingoffset-1.0.0-jar-with-dependencies.jar 
 
