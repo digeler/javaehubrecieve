@@ -1,3 +1,4 @@
+<h1>Building the Reciever</h1> 
 <p># javaehubrecieve recive from azure evhub <p>steps to build :
 </p> clone the project edit the java files with your credentials and hubnamespace run docker build -t [name] .  create the dokcer container :</p>
 <p>docker run -itd [image] java -jar ReceiveByDateTime/target/receiveusingoffset-1.0.0-jar-with-dependencies.jar 
@@ -21,3 +22,14 @@ ReceivedBatch Size: 1
 ReceivedBatch Size: 0
 
 </p>
+<h1> Building the sender</h1>
+</p> clone the project edit the java files with your credentials and hubnamespace run docker build -t [name] .  create the dokcer container :</p>
+<p>docker run -itd [image] java -jar SimpleSend/target/simplesend-1.0.0-jar-with-dependencies.jar  
+</p>
+
+<p> once message is send you will see :
+  2018-09-29T08:08:53.854Z: Send Complete...
+
+  </p>
+<p> check the reciever to see if the message arrived docker logs 216b11cb5efb --follow </p>
+<p>
